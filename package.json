@@ -1,0 +1,27 @@
+{
+  "name": "lightweightconstruction",
+  "version": "1.0.0",
+  "description": "lightweight construction by office ca",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsgalo/lightweightconstruction.git"
+  },
+  "keywords": [
+    "architecture"
+  ],
+  "author": "office ca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsgalo/lightweightconstruction/issues"
+  },
+  "homepage": "https://github.com/itsgalo/lightweightconstruction#readme",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "express": "^4.17.1",
+    "socket.io": "^2.4.1"
+  }
+}
