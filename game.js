@@ -31,6 +31,7 @@ class Game {
     const manager = new THREE.LoadingManager();
     manager.onLoad = function() {
       console.log('loading environment done');
+      document.getElementById('loading').style.display = "none";
     }
     const bgLoader = new THREE.GLTFLoader(manager);
     bgLoader.load('assets/gltf/environment.glb', function(object){

@@ -86,6 +86,14 @@
 				z-index: 100;
 				display:none;
 			}
+			#loading {
+				position: absolute;
+				top: 30%;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:none;
+			}
       input[type=text]{
 				padding: 5px;
 				width: 33%;
@@ -122,17 +130,20 @@
 				game = new Game();
 				document.getElementById('modal').style.display = "none";
 				document.getElementById('chat').style.display = "block";
+				document.getElementById('loading').style.display = "block";
 			};
 		</script>
-		<div id="modal"><h1>lightweight construction<br>by office ca <br>[beta]</h1><button onclick="startGame()"><h2>ENTER</h2></button>
+		<div id="modal"><h1>lightweight construction site<br>by office ca <br>[experimental]</h1><button onclick="startGame()"><h2>ENTER</h2></button>
 			<p>a virtual space for gathering
 				<br>desktop: right-click to move player, left-click and drag to orbit
 				<br>mobile: touch to move player, touch and drag to orbit
-				<br>share messages (up to 20 characters) using keyboard</p>
-				<p>
-					<br>disclaimer: this is a public space, please be kind to one another</p>
+				<br>share messages (up to 20 characters) using keyboard
+				<br>disclaimer: this is a public space, please be kind to one another
+				<br>more information at <a href="https://officeca.com">officeca.com</a>
+			</p>
 		</div>
 		<div id="chat"><h2>say something nice</h2><br><input id="chatText" type="text" maxlength="20"></div>
+		<div id="loading"><h1>loading...</h1></div>
 
 	</body>
 </html>
